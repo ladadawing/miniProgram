@@ -1,13 +1,48 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/food/food",
+    "pages/search/search",
+    "pages/img/img",
     "pages/logs/logs"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFE4B5",
+    "navigationBarTitleText": "干饭人",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#FFFFE0"
+  },
+  "tabBar": {
+    "color": "#4D4D4D", 
+    "selectedColor": "#FFA54F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/3.png",
+        "selectedIconPath": "icon/3.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "菜单",
+        "iconPath": "icon/4.png",
+        "selectedIconPath": "icon/4.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "icon/7.png",
+        "selectedIconPath": "icon/7.png"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "美食",
+        "iconPath": "icon/17.png",
+        "selectedIconPath": "icon/17.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
