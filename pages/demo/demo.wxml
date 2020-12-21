@@ -1,0 +1,56 @@
+<!-- 一、模板语法 -->
+<!-- 1.基本使用 -->
+<view>{{message}}</view>
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>  
+
+<!-- 2.在标签值的属性中使用 -->
+<view data-num="{{num}}">自定义属性</view>
+
+<!-- 3.使用布尔值充当属性,checked属性勾选-->
+<view>
+    <checkbox checked></checkbox>
+    <checkbox checked="{{isChecked}}"></checkbox>
+</view>
+
+<!-- 循环渲染 -->
+<view>
+    <view wx:for="{{list}}" wx:for-item="item"
+     wx:key="id"
+     wx:for-index="index">
+        索引: {{index}}
+        --
+        值: {{item.name}}
+    </view>
+    <view wx:for="{{person}}" wx:for-item="value" wx:for-index="key">
+        属性：{{key}}
+        --
+        值: {{value}}
+    </view>
+</view>
+
+
+<!-- 条件渲染 -->
+
+<view>
+    <view wx:if="{{false}}">显示</view>
+    <view wx:if="{{false}}">隐藏</view>
+
+    <view wx:if="{{false}}">1</view>
+    <view wx:elif="{{true}}">2</view>
+
+    <view hidden>在不在</view>
+    <view hidden="{{false}}">我在呢</view>
+</view>
+
+<!-- 事件的数据双向绑定 -->
+<view>
+    <input type="text" style="border: 1px solid red" bindinput="handleInput" />
+    <view>
+      {{num}}  
+    </view>
+    <button bindtap="handleTap" data-operation="{{1}}">+</button>
+    <button bindtap="handleTap" data-operation="{{-1}}">-</button>
+</view>
+
+<!-- 样式 -->
