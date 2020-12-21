@@ -1,2 +1,7 @@
-<!--pages/demo1/demo1.wxml-->
-<text>pages/demo1/demo1.wxml</text>
+<!-- 父向子传递数据 -->
+<Tabs tabs="{{tabs}}" bindhandleChange="handleItem">
+    <block wx:if="{{tabs[0].isActive}}">是首页啊</block>
+    <block wx:elif="{{tabs[1].isActive}}">是原创啊</block>
+    <block wx:elif="{{tabs[2].isActive}}">分类</block>
+    <block wx:else>关于哈哈哈哈</block>
+</Tabs> 
