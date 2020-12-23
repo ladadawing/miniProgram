@@ -38,5 +38,20 @@ Page({
     this.setData({
       tabs
     })
+  },
+  onLoad(){
+    console.log('①我是page下的页面加载')
+  },
+  onShow(){
+    console.log('②我是page下的页面显示')
+  },
+  onReady(){
+    console.log('③我是page下的页面初次渲染完成')
+  },
+  onHide(){
+    console.log('④我是page下的页面隐藏')
+  },
+  onUnload(){
+    console.log('页面卸载')
   }
 })
