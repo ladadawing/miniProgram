@@ -39,6 +39,7 @@ Page({
       tabs
     })
   },
+  // 生命周期
   onLoad(){
     console.log('①我是page下的页面加载')
   },

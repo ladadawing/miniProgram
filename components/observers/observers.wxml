@@ -1,0 +1,17 @@
+<view class="container">
+  <!-- observers监听属性 -->
+  <view>
+      <view>小萝卜</view>
+      <view>价格：{{price}}</view>
+      <view>数量：<input type="number" bindinput="change" value="{{amount}}"/></view>
+      <view>总价：{{priceAll}}</view>
+  </view>
+
+----------------
+  <!-- 第二个例子-->
+  <view>
+    <input type="number" bindinput="input1" value="{{num1}}"/> + 
+    <input type="number" bindinput="input2" value="{{num2}}"/> =
+    <text>{{sum}}</text>
+  </view>
+</view>

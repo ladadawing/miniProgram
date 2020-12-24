@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "Tabs":"../../components/Tabs/Tabs"
+    "Tabs":"../../components/Tabs/Tabs",
+    "testSlot":"../../components/test-slot/test-slot",
+    "Observers": "../../components/observers/observers"
   }
 }

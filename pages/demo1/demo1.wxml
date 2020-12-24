@@ -5,3 +5,14 @@
     <block wx:elif="{{tabs[2].isActive}}">分类</block>
     <block wx:else>关于哈哈哈哈</block>
 </Tabs> 
+
+------------------------
+<!-- 插槽slot使用 -->
+<testSlot>
+    <view slot="slot3">第三个</view>
+    <view slot="slot2">第二个</view>
+    <view slot="slot1"><view>插入组件的东西</view></view>
+</testSlot>
+----------------------
+
+<Observers></Observers>

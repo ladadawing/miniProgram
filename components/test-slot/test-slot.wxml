@@ -1,0 +1,7 @@
+<view class="container">
+  
+  <slot name="slot1"></slot>
+  <slot name="slot2"></slot>
+  <slot name="slot3"></slot>
+  <view>标题1</view>
+</view>
